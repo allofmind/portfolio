@@ -1,0 +1,118 @@
+.main-block
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3) inset
+  height: 100%
+  float: left
+  .header-navigation
+    height: 50px
+    border: 1px solid black
+    display: none
+  .panel-container
+    width: 100%
+    height: calc(100% - 50px)
+    overflow: hidden
+    perspective: 1000px
+    // background-image: linear-gradient(180deg, #3A6073 0%, #16222A 100%)
+    transform-style: preserve-3d
+    .panel-box
+      position: absolute
+      width: 100%
+      height: 100%
+      .panel
+        position: absolute
+        width: 100%
+        height: 100%
+        padding: 30px
+        box-sizing: border-box
+        overflow-y: hidden
+
+.main-nav-container
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.05) inset
+  float: left
+  min-height: 100%
+  .some-box
+    height: 150px
+    border-bottom: 1px solid transparent
+    cursor: pointer
+    display: table
+    width: 100%
+    &:hover
+      .fa-power-off
+        text-shadow: 0px 0px 5px rgba(186, 18, 18, 0.3)
+    .fa-power-off
+      font-size: 30px
+      text-shadow: 0px 0px 0px transparent
+  .main-nav
+    -webkit-user-select: none
+    a
+      height: 100px
+      box-sizing: border-box
+      cursor: pointer
+      display: table
+      width: 100%
+      transition: background-color 0.3s ease-in-out
+      &:hover
+        background-color: rgba(255, 255, 255, 0.05)
+      .middle
+        font-size: 19px
+
+
+@media only screen and (max-width: 320px)
+  .main-block
+    width: 100%
+    .header-navigation
+      display: block
+    .panel-box
+      .panel
+        padding: 15px
+  .main-nav-container
+    width: 150px
+    position: absolute
+    right: -150px
+@media only screen and (min-width: 320px) and (max-width: 768px)
+  .main-block
+    width: 100%
+    .header-navigation
+      display: block
+    .panel-box
+      .panel
+        padding: 30px
+  .main-nav-container
+    width: 200px
+    position: absolute
+    right: -200px
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  .main-block
+    width: 100%
+    .header-navigation
+      display: block
+    .panel-box
+      .panel
+        padding: 35px
+  .main-nav-container
+    width: 250px
+    position: absolute
+    right: -250px
+@media only screen and (min-width: 1024px) and (max-width: 1366px)
+  .main-block
+    width: calc(100% - 250px)
+    .panel-box
+      .panel
+        padding: 40px
+  .main-nav-container
+    width: 250px
+@media only screen and (min-width: 1366px) and (max-width: 1680px)
+  .main-block
+    width: calc(100% - 300px)
+    .panel-box
+      .panel
+        padding: 45px
+  .main-nav-container
+    width: 300px
+@media only screen and (min-width: 1680px)
+  .main-block
+    width: calc(100% - 350px)
+    .panel-box
+      .panel
+        padding: 50px
+  .main-nav-container
+    width: 350px
