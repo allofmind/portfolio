@@ -1,6 +1,7 @@
 html {
   height: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow: hidden; }
 
 body {
   margin: 0px;
@@ -8,16 +9,39 @@ body {
   min-height: 100%;
   font-family: "Open Sans";
   overflow: hidden;
+  position: relative;
+  color: #E5E4E2;
   color: #EBF4FA;
+  perspective: 1000px;
+  transform-style: preserve-3d;
   background-image: linear-gradient(180deg, #3A6073 0%, #16222A 100%); }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px; }
 
-.cell, .middle {
+.cell, .cell-all, .middle {
   display: table-cell; }
+
+.cell-all {
+  width: 100%; }
 
 .middle {
   vertical-align: middle;
   text-align: center; }
+
+button {
+  background: none;
+  border: none;
+  outside: none; }
+
+.main-container {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.hrefs {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 10000; }

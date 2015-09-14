@@ -1,0 +1,174 @@
+.user-interface
+  height: 100%
+  width: 100%
+  position: absolute
+  .main-content-container
+    height: 100%
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3) inset
+    transform-origin: 100% 0px
+    .header-navigation
+      width: 100%
+      position: relative
+      .menu-button
+        width: 80px
+        height: 100%
+        position: absolute
+        right: 0px
+        display: table
+        &.active
+          .fa-bars
+            color: black
+        .fa-bars
+          font-size: 30px
+          transition: color 0.6s
+    .panel-container
+      width: 100%
+      // overflow: hidden
+      position: relative
+      .panel-box
+        position: absolute
+        width: 100%
+        height: 100%
+        .panel
+          position: absolute
+          width: 100%
+          height: 100%
+          box-sizing: border-box
+          // overflow-y: hidden
+          padding-right: 30px
+          padding-bottom: 30px
+          padding-left: 30px
+  .main-nav-container
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.05) inset
+    min-height: 100%
+    top: 0px
+    transform-origin: 0px 100%
+    .some-box
+      height: 150px
+      border-bottom: 1px solid transparent
+      cursor: pointer
+      display: table
+      width: 100%
+      &:hover
+        .fa-power-off
+          text-shadow: 0px 0px 5px rgba(186, 18, 18, 0.3)
+      .fa-power-off
+        font-size: 30px
+        text-shadow: 0px 0px 0px transparent
+    .main-nav
+      -webkit-user-select: none
+      a
+        height: 100px
+        box-sizing: border-box
+        cursor: pointer
+        display: table
+        width: 100%
+        transition: background-color 0.3s ease-in-out
+        &:hover
+          background-color: rgba(255, 255, 255, 0.05)
+        .middle
+          font-size: 19px
+
+
+@media only screen and (max-width: 320px)
+  .user-interface
+    width: calc(100% + 150px)
+    position: relative
+    .main-content-container
+      width: calc(100% - 150px)
+      .header-navigation
+        display: block
+        height: 55px
+      .panel-container
+        height: calc(100% - 55px)
+        .panel-box
+          .panel
+            padding-top: 20px
+    .main-nav-container
+      width: 150px
+      position: absolute
+      right: 0px
+@media only screen and (min-width: 320px) and (max-width: 768px)
+  .user-interface
+    width: calc(100% + 200px)
+    position: relative
+    .main-content-container
+      width: calc(100% - 200px)
+      .header-navigation
+        display: block
+        height: 65px
+      .panel-container
+        height: calc(100% - 65px)
+        .panel-box
+          .panel
+            padding-top: 25px
+    .main-nav-container
+      width: 200px
+      position: absolute
+      right: 0px
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  .user-interface
+    width: calc(100% + 250px)
+    position: relative
+    .main-content-container
+      width: calc(100% - 250px)
+      .header-navigation
+        display: block
+        height: 80px
+      .panel-container
+        height: calc(100% - 80px)
+        .panel-box
+          .panel
+            padding-top: 30px
+    .main-nav-container
+      width: 250px
+      position: absolute
+      right: 0px
+@media only screen and (min-width: 1024px) and (max-width: 1366px)
+  .user-interface
+    width: 100%
+    .main-content-container
+      width: calc(100% - 250px)
+      float: left
+      .header-navigation
+        display: none
+      .panel-container
+        height: 100%
+        .panel-box
+          .panel
+            padding-top: 40px
+    .main-nav-container
+      width: 250px
+      float: left
+@media only screen and (min-width: 1366px) and (max-width: 1680px)
+  .user-interface
+    width: 100%
+    .main-content-container
+      width: calc(100% - 300px)
+      float: left
+      .header-navigation
+        display: none
+      .panel-container
+        height: 100%
+        .panel-box
+          .panel
+            padding-top: 45px
+    .main-nav-container
+      width: 300px
+      float: left
+@media only screen and (min-width: 1680px)
+  .user-interface
+    width: 100%
+    .main-content-container
+      width: calc(100% - 350px)
+      float: left
+      .header-navigation
+        display: none
+      .panel-container
+        height: 100%
+        .panel-box
+          .panel
+            padding-top: 50px
+    .main-nav-container
+      width: 350px
+      float: left
